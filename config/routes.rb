@@ -8,6 +8,7 @@ Rails.application.routes.draw do
   get "users/index" => "users#index"
   post "users/create" => "users#create"
   get "users/:id" => "users#show"
+  get "users/:id/likes" => "users#likes"
   get "users/:id/edit" => "users#edit"
   post "users/:id/update" => "users#update"
   get "posts/index" => "posts#index"
